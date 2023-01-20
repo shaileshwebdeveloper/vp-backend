@@ -6,8 +6,8 @@ const userRouter = Router()
 
 userRouter.get('/', getData)
 userRouter.post('/', postData)
-userRouter.patch('/', patchData)
-userRouter.delete('/', deleteData)
+userRouter.patch('/:id', patchData)
+userRouter.delete('/:id', deleteData)
 
 
 module.exports = {
